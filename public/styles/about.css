@@ -1,0 +1,15 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.about-container {
+  min-width: 580px;
+  padding: 3rem;
+
+  & h2 {
+    text-wrap: balance;
+  }
+}
