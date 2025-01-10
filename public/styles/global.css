@@ -1,0 +1,60 @@
+/* Variáveis de Cores */
+:root {
+  --dark-gray: hsl(0, 0%, 63%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --very-dark-gray: hsl(0, 0%, 27%);
+}
+
+/* Variáveis de Tipografia */
+:root {
+  --font-size-body: 12px;
+  --font-family-primary: 'League Spartan', sans-serif;
+  --font-weight-bold: 600;
+}
+
+/* Estilos Globais */
+body {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-body);
+  margin: 0;
+  line-height: 1.6;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+  margin:0;
+  letter-spacing: -2px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 1rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.375;
+  color: var(--dark-gray);
+}
+
+.text-dark-gray {
+  color: var(--dark-gray);
+}
+
+.text-very-dark-gray {
+  color: var(--very-dark-gray);
+}
+
+.bg-white {
+  background-color: var(--white);
+}

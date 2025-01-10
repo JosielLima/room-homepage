@@ -1,0 +1,11 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: var(--white);
+}

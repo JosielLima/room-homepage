@@ -2,10 +2,11 @@
   "name": "room-homepage",
   "packageManager": "yarn@4.6.0",
   "scripts": {
-    "start": "http-server",
-    "build": "echo 'Não há necessidade de build para essa estrutura simples'" 
+    "start": "live-server",
+    "build": "echo 'Não há necessidade de build para essa estrutura simples'"
   },
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
   }
 }
