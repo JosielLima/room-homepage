@@ -47,6 +47,10 @@ p {
   color: var(--dark-gray);
 }
 
+button {
+  cursor: pointer;
+}
+
 .text-dark-gray {
   color: var(--dark-gray);
 }
