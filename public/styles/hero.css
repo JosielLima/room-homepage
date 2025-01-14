@@ -28,7 +28,7 @@
   }
 }
 
-.hero-content {
+.hero-content, .hero-content-text {
   margin:auto;
   display: flex;
   flex-direction: column;

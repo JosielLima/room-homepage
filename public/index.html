@@ -30,8 +30,18 @@
   <main class="main">
     <section class="hero">
       <div class="hero-image">
-          <source srcset="./images/mobile-image-hero-1.jpg" type="image/jpeg">
-          <img src="./images/desktop-image-hero-1.jpg" alt="Hero image">
+          <div class="slide-image" data-slide="slide-1">
+            <source srcset="./images/mobile-image-hero-1.jpg" type="image/jpeg">
+            <img src="./images/desktop-image-hero-1.jpg" alt="Hero image">
+          </div>
+          <div class="slide-image" data-slide="slide-2">
+            <source srcset="./images/mobile-image-hero-2.jpg" type="image/jpeg">
+            <img src="./images/desktop-image-hero-2.jpg" alt="Hero image">
+          </div>
+          <div class="slide-image" data-slide="slide-3">
+            <source srcset="./images/mobile-image-hero-3.jpg" type="image/jpeg">
+            <img src="./images/desktop-image-hero-3.jpg" alt="Hero image">
+          </div>
           <div class="slider-controls">
             <button class="prev">
               <img src="images/icon-angle-left.svg" alt="prev slide">
@@ -42,8 +52,23 @@
           </div>
       </div>
       <div class="hero-content">
-          <h1>Discover innovative ways to decorate</h1>
-          <p>We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
+          <div class="hero-content-text" data-slide="slide-1">
+            <h1>Discover innovative ways to decorate</h1>
+            <p>We provide unmatched quality, comfort, and style for property owners across the country.
+               Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
+          </div>
+          <div class="hero-content-text" data-slide="slide-2">
+            <h1>We are available all across the globe</h1>
+            <p>With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+              Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+              store locator. Any questions? Don't hesitate to contact us today.</p>
+          </div>
+          <div class="hero-content-text" data-slide="slide-3">
+            <h1>Manufactured with the best materials</h1>
+            <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+              to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+              experience in this industry, we understand what customers want for their home and office.</p>
+          </div>
           <button href="#" class="cta">
             <span>Shop now</span>
             <img src="images/icon-arrow.svg" alt="shop now icon">
@@ -69,4 +94,8 @@
     Coded by <a href="#">Josiel Lima</a>.
   </footer>
 </body>
+<script type="module">
+  import app from "./scripts/app.js";
+  app();
+</script>
 </html>

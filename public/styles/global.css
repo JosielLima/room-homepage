@@ -50,15 +50,3 @@ p {
 button {
   cursor: pointer;
 }
-
-.text-dark-gray {
-  color: var(--dark-gray);
-}
-
-.text-very-dark-gray {
-  color: var(--very-dark-gray);
-}
-
-.bg-white {
-  background-color: var(--white);
-}
