@@ -50,5 +50,28 @@ export default function app() {
     } else {
       console.log("Erro ao adicionar evento");
     }
+
+    const headerNavToggle = document.querySelector(".header-nav-toggle");
+    const headerNavMobile = document.querySelector(".header-nav-mobile");
+    const headerNavClose = document.querySelector(".header-nav-close");
+
+    function toggleNavMobile() {
+      headerNavMobile.classList.remove("hidden");
+    }
+
+    function toggleNavMobileClose() {
+      headerNavMobile.classList.add("hidden");
+    }
+    if (headerNavToggle) {
+      headerNavToggle.addEventListener("click", toggleNavMobile);
+    } else {
+      console.error("Error: header-nav-toggle element not found.");
+    }
+
+    if (headerNavClose) {
+      headerNavClose.addEventListener("click", toggleNavMobileClose);
+    } else {
+      console.error("Error: header-nav-close element not found.");
+    }
 }
 

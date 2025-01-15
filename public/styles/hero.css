@@ -4,6 +4,10 @@
   max-height: fit-content;
   max-width: fit-content;
 
+  @media  (max-width: 768px) {
+    height: auto;
+  }
+
   & .slider-controls {
     position: absolute;
     bottom: 0px;
@@ -11,6 +15,11 @@
     display: flex;
     flex-direction: row;
     gap: 0;
+
+    @media  (max-width: 768px) {
+       bottom: 8px;
+       right: 0px;
+    }
 
     & button {
       width: 80px;
@@ -35,6 +44,12 @@
   gap: 1.5rem;
 }
 
+.hero-content {
+  @media  (max-width: 768px) {
+    padding: 0 1rem;
+  }
+}
+
 .cta {
   background-color: unset;
   border: none;
@@ -49,5 +64,16 @@
 
   &:hover {
     opacity: 0.5;
+  }
+}
+
+.hero {
+  @media  (max-width: 768px) {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
   }
 }

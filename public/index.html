@@ -25,23 +25,45 @@
         </ul>
       </nav>
     </div>
+    <div class="header-container-mobile">
+      <button class="header-nav-toggle">
+        <img src="./images/icon-hamburger.svg" alt="Menu">
+      </button>
+      <div class="header-logo">
+        <img src="./images/logo.svg" alt="Logo">
+      </div>
+    </div>
   </header>
+
+  <div class="header-nav-mobile hidden">
+    <nav>
+      <button class="header-nav-close">
+        <img src="./images/icon-close.svg" alt="Close">
+      </button>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <main class="main">
     <section class="hero">
       <div class="hero-image">
-          <div class="slide-image" data-slide="slide-1">
-            <source srcset="./images/mobile-image-hero-1.jpg" type="image/jpeg">
-            <img src="./images/desktop-image-hero-1.jpg" alt="Hero image">
-          </div>
-          <div class="slide-image" data-slide="slide-2">
-            <source srcset="./images/mobile-image-hero-2.jpg" type="image/jpeg">
-            <img src="./images/desktop-image-hero-2.jpg" alt="Hero image">
-          </div>
-          <div class="slide-image" data-slide="slide-3">
-            <source srcset="./images/mobile-image-hero-3.jpg" type="image/jpeg">
-            <img src="./images/desktop-image-hero-3.jpg" alt="Hero image">
-          </div>
+          <picture class="slide-image" data-slide="slide-1">
+            <source srcset="./images/desktop-image-hero-1.jpg" media="(min-width: 768px)" >
+            <img loading="lazy" src="./images/mobile-image-hero-1.jpg" alt="Principal image collection">
+          </picture>
+          <picture class="slide-image" data-slide="slide-2">
+            <source srcset="./images/desktop-image-hero-2.jpg" media="(min-width: 768px)" >
+            <img loading="lazy" src="./images/mobile-image-hero-2.jpg" alt="Principal image collection 2">
+          </picture>
+          <picture class="slide-image" data-slide="slide-3">
+            <source srcset="./images/desktop-image-hero-3.jpg" media="(min-width: 768px)" >
+            <img loading="lazy" src="./images/mobile-image-hero-3.jpg" alt="Principal image collection 3">
+          </picture>
           <div class="slider-controls">
             <button class="prev">
               <img src="images/icon-angle-left.svg" alt="prev slide">
@@ -88,7 +110,7 @@
       <img src="./images/image-about-light.jpg" alt="Hero image">
     </div>
   </section>
-
+  </main>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Josiel Lima</a>.
